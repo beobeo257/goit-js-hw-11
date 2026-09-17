@@ -9,7 +9,7 @@ import {
   hideLoader,
 } from './js/render-functions.js';
 
-const searchForm = document.querySelector('.form');
+const searchForm = document.querySelector('form');
 
 searchForm.addEventListener('submit', handleSearch);
 
@@ -17,7 +17,7 @@ async function handleSearch(event) {
   event.preventDefault();
 
   const form = event.currentTarget;
-  const searchQuery = form.elements.userQuery.value.trim();
+  const searchQuery = form.elements['search-text'].value.trim();
 
   if (searchQuery === '') {
     iziToast.warning({
