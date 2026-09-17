@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const API_KEY = '57635798-c4932ba894df776d1b1444d77';
-const BASE_URL =
-  'https://pixabay.com/api/?key=57635798-c4932ba894df776d1b1444d77&q=yellow+flowers&image_type=photo';
+const BASE_URL = 'https://pixabay.com/api/';
 
 /**
  @param {string} query

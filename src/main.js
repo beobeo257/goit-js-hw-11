@@ -42,6 +42,8 @@ async function handleSearch(event) {
         position: 'topRight',
         timeout: 4000,
       });
+
+      return;
     }
 
     createGallery(data.hits);
