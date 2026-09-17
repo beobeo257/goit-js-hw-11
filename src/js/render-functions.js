@@ -9,9 +9,9 @@ const lightbox = new SimpleLightbox('.gallery a', {
 });
 
 /**
- * Створює HTML-размітку карток, додає її в <ul class="gallery"> та оновлює плагін.
- * @param {Array} images - Масив об'єктів зображень із Pixabay
- * */
+ @param {Array} images
+ */
+
 export function createGallery(images) {
   const markup = images
     .map(
@@ -65,18 +65,16 @@ export function clearGallery() {
   galleryContainer.innerHTML = '';
 }
 
-// Функция для ПОКАЗА лоадера
 export function showLoader() {
-  const loader = document.querySelector('.loader'); // найдет элемент с классом loader
+  const loader = document.querySelector('.loader');
   if (loader) {
-    loader.classList.remove('is-hidden'); // убираем скрытие -> лоадер появляется
+    loader.classList.remove('is-hidden');
   }
 }
 
-// Функция для СКРЫТИЯ лоадера
 export function hideLoader() {
   const loader = document.querySelector('.loader');
   if (loader) {
-    loader.classList.add('is-hidden'); // добавляем скрытие -> лоадер исчезает
+    loader.classList.add('is-hidden');
   }
 }

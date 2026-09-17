@@ -2,7 +2,7 @@
   display: none;
 }
 
-.search-form {
+.form {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -71,6 +71,7 @@ button:focus {
   flex-wrap: wrap;
   width: 1128px;
   margin: 0 auto;
+  gap: 24px;
 }
 
 .gallery-item {
@@ -87,9 +88,10 @@ button:focus {
 }
 
 .info-box {
+  display: flex;
   justify-content: space-between;
-  padding: auto 20px;
   position: absolute;
+  padding: auto 20px;
   bottom: 0;
   left: 0;
   height: 48px;
